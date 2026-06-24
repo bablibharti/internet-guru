@@ -1,0 +1,259 @@
+.scam-page {
+    min-height: 100vh;
+
+    background: linear-gradient(135deg,
+            #0f172a,
+            #1e293b,
+            #2563eb);
+
+    color: white;
+
+    padding: 40px 20px;
+}
+
+.scam-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.top-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.top-section h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.top-section p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 18px;
+}
+
+.xp-box {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 12px 22px;
+
+    border-radius: 50px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    font-weight: bold;
+}
+
+.phone-view {
+    width: 420px;
+    max-width: 100%;
+
+    margin: auto;
+
+    background: #0b141a;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.45);
+
+    animation: floatPhone 4s ease-in-out infinite;
+}
+
+.chat-header {
+    background: #202c33;
+
+    color: white;
+
+    padding: 18px;
+
+    font-weight: bold;
+
+    font-size: 18px;
+}
+
+.message-bubble {
+    background: #202c33;
+
+    color: white;
+
+    margin: 30px 20px;
+
+    padding: 18px;
+
+    border-radius: 16px;
+
+    line-height: 1.7;
+
+    position: relative;
+}
+
+.message-bubble::after {
+    content: "";
+
+    position: absolute;
+
+    left: -8px;
+    top: 12px;
+
+    width: 16px;
+    height: 16px;
+
+    background: #202c33;
+
+    transform: rotate(45deg);
+}
+
+.action-area {
+    display: flex;
+
+    gap: 15px;
+
+    justify-content: center;
+
+    padding: 20px;
+}
+
+.safe-btn,
+.scam-btn {
+    border: none;
+
+    padding: 14px 24px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.safe-btn {
+    background: #16a34a;
+    color: white;
+}
+
+.scam-btn {
+    background: #dc2626;
+    color: white;
+}
+
+.safe-btn:hover,
+.scam-btn:hover {
+    transform: scale(1.08);
+}
+
+.result-box {
+    margin-top: 30px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    animation: fadeIn 0.4s ease;
+}
+
+.result-box h3 {
+    margin-bottom: 12px;
+}
+
+.result-box p {
+    line-height: 1.8;
+}
+
+.next-btn {
+    margin-top: 20px;
+
+    border: none;
+
+    padding: 12px 22px;
+
+    border-radius: 50px;
+
+    background: white;
+
+    color: #1e40af;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.next-btn:hover {
+    transform: scale(1.05);
+}
+
+.finish-box {
+    margin-top: 20px;
+
+    padding: 18px;
+
+    border-radius: 15px;
+
+    background: rgba(34, 197, 94, 0.2);
+
+    border: 1px solid rgba(34, 197, 94, 0.5);
+
+    text-align: center;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@keyframes floatPhone {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    .top-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .action-area {
+        flex-direction: column;
+    }
+
+    .safe-btn,
+    .scam-btn {
+        width: 100%;
+    }
+}

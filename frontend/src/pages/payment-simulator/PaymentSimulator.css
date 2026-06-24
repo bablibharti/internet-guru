@@ -1,0 +1,217 @@
+.payment-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg,
+            #0f172a,
+            #1e293b,
+            #2563eb);
+
+    color: white;
+    padding: 40px 20px;
+}
+
+.payment-hero {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+.payment-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+}
+
+.payment-hero p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.roadmap {
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+}
+
+.roadmap::before {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    top: 0;
+
+    transform: translateX(-50%);
+
+    width: 6px;
+    height: 100%;
+
+    background: rgba(255, 255, 255, 0.25);
+
+    border-radius: 50px;
+}
+
+.mission-node {
+    width: 50%;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.mission-node.left {
+    padding-right: 60px;
+}
+
+.mission-node.right {
+    margin-left: auto;
+    padding-left: 60px;
+}
+
+.mission-card {
+    background: rgba(255, 255, 255, 0.12);
+
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    transition: all 0.35s ease;
+
+    animation: floating 4s ease-in-out infinite;
+}
+
+.mission-card:hover {
+    transform: translateY(-10px) scale(1.03);
+
+    box-shadow:
+        0 20px 40px rgba(59, 130, 246, 0.4);
+
+    background:
+        rgba(255, 255, 255, 0.18);
+}
+
+.mission-level {
+    display: inline-block;
+
+    background: #3b82f6;
+
+    padding: 8px 14px;
+
+    border-radius: 30px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.mission-card h2 {
+    margin-bottom: 10px;
+}
+
+.mission-card p {
+    color: rgba(255, 255, 255, 0.85);
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+.reward {
+    margin-bottom: 20px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    color: #facc15;
+}
+
+.start-btn {
+    display: inline-block;
+
+    text-decoration: none;
+
+    background: white;
+
+    color: #1e40af;
+
+    font-weight: bold;
+
+    padding: 12px 22px;
+
+    border-radius: 50px;
+
+    transition: all 0.3s ease;
+}
+
+.start-btn:hover {
+    transform: scale(1.08);
+
+    box-shadow:
+        0 10px 30px rgba(255, 255, 255, 0.3);
+}
+
+.mission-node::before {
+    content: "";
+
+    position: absolute;
+
+    width: 24px;
+    height: 24px;
+
+    border-radius: 50%;
+
+    background: #60a5fa;
+
+    top: 40px;
+
+    box-shadow:
+        0 0 20px #60a5fa;
+}
+
+.mission-node.left::before {
+    right: -12px;
+}
+
+.mission-node.right::before {
+    left: -12px;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 768px) {
+    .roadmap::before {
+        left: 20px;
+    }
+
+    .mission-node {
+        width: 100%;
+
+         padding-left: 60px !important;
+        padding-right: 0 !important;
+        
+    }
+
+    .mission-node.left::before,
+    .mission-node.right::before {
+        left: 8px;
+    }
+
+    .payment-hero h1 {
+        font-size: 2.3rem;
+    }
+}

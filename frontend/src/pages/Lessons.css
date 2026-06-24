@@ -1,0 +1,83 @@
+.journey-page {
+    min-height: 100vh;
+    background: linear-gradient(180deg,
+            #0f172a,
+            #1e3a8a);
+    color: white;
+    padding: 40px;
+}
+
+.journey-page h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.journey-path {
+    max-width: 900px;
+    margin: auto;
+}
+
+.level {
+    display: flex;
+    margin: 40px 0;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.level-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    text-decoration: none;
+    color: white;
+}
+
+.level-circle {
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+
+    background: #3b82f6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    box-shadow:
+        0 0 25px rgba(59, 130, 246, .7);
+
+    transition: .3s;
+}
+
+.level-card {
+    background:
+        rgba(255, 255, 255, .1);
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    min-width: 250px;
+
+    transition: .3s;
+}
+
+.level-link:hover .level-circle {
+    transform: scale(1.15);
+}
+
+.level-link:hover .level-card {
+    transform: translateY(-5px);
+}
+

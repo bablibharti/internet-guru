@@ -1,0 +1,55 @@
+.labs-page {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(135deg,
+            #0f172a,
+            #1e293b,
+            #2563eb);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 50px 20px;
+}
+
+.labs-grid {
+    margin-top: 40px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+}
+
+.lab-link {
+    text-decoration: none;
+    color: white;
+}
+
+.lab-card {
+    background:
+        rgba(255, 255, 255, .1);
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px);
+
+    transition: .3s;
+
+    border:
+        1px solid rgba(255, 255, 255, .15);
+}
+
+.lab-card:hover {
+    transform:
+        translateY(-10px) scale(1.04);
+
+    box-shadow:
+        0 15px 40px rgba(59, 130, 246, .4);
+}

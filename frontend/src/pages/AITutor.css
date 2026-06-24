@@ -1,0 +1,239 @@
+.ai-page {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(135deg,
+            #0f172a,
+            #1e293b,
+            #2563eb);
+
+    color: white;
+
+    padding: 40px 20px;
+}
+
+.ai-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.teacher-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    padding: 25px;
+
+    border-radius: 25px;
+
+    background:
+        rgba(255, 255, 255, 0.1);
+
+    backdrop-filter: blur(12px);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.15);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .3);
+
+    animation:
+        floating 4s ease-in-out infinite;
+}
+
+.teacher-avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+
+    border: 4px solid #60a5fa;
+
+    box-shadow:
+        0 0 25px #3b82f6;
+}
+
+.teacher-card h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.teacher-card p {
+    opacity: 0.9;
+    line-height: 1.7;
+}
+
+.language-box {
+    margin-top: 25px;
+}
+
+.language-box select {
+    padding: 12px 18px;
+
+    border-radius: 12px;
+
+    border: none;
+
+    background:
+        rgba(255, 255, 255, 0.15);
+
+    color: white;
+
+    font-size: 16px;
+}
+
+.language-box select option {
+    color: black;
+}
+
+.question-box {
+    margin-top: 25px;
+}
+
+.question-box textarea {
+    width: 100%;
+    height: 220px;
+
+    background:
+        rgba(255, 255, 255, 0.1);
+
+    color: white;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    font-size: 18px;
+
+    backdrop-filter: blur(10px);
+}
+
+.question-box textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+
+    margin-top: 25px;
+}
+
+.voice-btn,
+.ask-btn,
+.stop-btn {
+    border: none;
+
+    padding: 14px 28px;
+
+    border-radius: 50px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.voice-btn {
+    background: #f59e0b;
+    color: white;
+}
+
+.ask-btn {
+    background: #3b82f6;
+    color: white;
+}
+
+.stop-btn {
+    background: #ef4444;
+    color: white;
+}
+
+.voice-btn:hover,
+.ask-btn:hover,
+.stop-btn:hover {
+    transform:
+        translateY(-3px) scale(1.05);
+
+    box-shadow:
+        0 10px 25px rgba(255, 255, 255, .2);
+}
+.thinking-box {
+    margin-top: 25px;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(255, 255, 255, 0.1);
+
+    animation:
+        pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: .6;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: .6;
+    }
+}
+
+.answer-card {
+    margin-top: 30px;
+
+    padding: 25px;
+
+    border-radius: 25px;
+
+    background:
+        rgba(255, 255, 255, 0.1);
+
+    backdrop-filter: blur(12px);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.15);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .3);
+}
+
+.answer-card h2 {
+    color: #60a5fa;
+}
+
+.answer-card p {
+    line-height: 2;
+    font-size: 18px;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}

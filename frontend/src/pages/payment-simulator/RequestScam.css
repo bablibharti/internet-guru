@@ -1,0 +1,141 @@
+.request-page {
+    min-height: 100vh;
+
+    background: linear-gradient(135deg,
+            #0f172a,
+            #1e293b,
+            #2563eb);
+
+    color: white;
+
+    padding: 40px 20px;
+}
+
+.request-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.request-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.request-header h1 {
+    font-size: 3rem;
+}
+
+.xp-box {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    padding: 12px 25px;
+
+    border-radius: 50px;
+}
+
+.phone-frame {
+    max-width: 420px;
+
+    margin: auto;
+
+    background: white;
+
+    color: black;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, .4);
+}
+
+.phone-top {
+    background: #1a73e8;
+
+    color: white;
+
+    padding: 20px;
+
+    text-align: center;
+
+    font-weight: bold;
+}
+
+.payment-card {
+    padding: 30px;
+    text-align: center;
+}
+
+.payment-card h2 {
+    font-size: 3rem;
+    color: #16a34a;
+}
+
+.action-buttons {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.receive-btn,
+.pay-btn {
+    border: none;
+
+    padding: 14px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    font-weight: bold;
+}
+
+.receive-btn {
+    background: #16a34a;
+    color: white;
+}
+
+.pay-btn {
+    background: #dc2626;
+    color: white;
+}
+
+.result-card,
+.tip-card {
+    margin-top: 30px;
+
+    background: rgba(255, 255, 255, 0.1);
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px);
+}
+
+.result-card {
+    animation: fadeIn .4s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
