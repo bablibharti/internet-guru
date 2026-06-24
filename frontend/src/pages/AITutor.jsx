@@ -108,11 +108,11 @@ setLoading(true);
     customQuestion || question;
 
   const res = await axios.post(
-    "http://localhost:5000/api/ai/ask",
+    "https://internet-guru-api.onrender.com/api/ai/ask",
     {
       question: finalQuestion,
       language,
-    }
+    },
   );
 
   setAnswer(res.data.answer);

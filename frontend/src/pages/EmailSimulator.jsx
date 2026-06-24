@@ -214,7 +214,7 @@ function EmailSimulator() {
       setLoading(true);
 
       const res = await axios.post(
-        "http://localhost:5000/api/ai/evaluate-email",
+        "http://https://internet-guru-api.onrender.com/api/ai/evaluate-email",
         {
           scenario: currentMission.scenario[language],
           subject,
