@@ -11,7 +11,7 @@ import AITutor from "./pages/AITutor";
 import EmailSimulator from "./pages/EmailSimulator";
 import PracticeLabs from "./pages/PracticeLabs";
 import ScamSimulator from "./pages/ScamSimulator";
-import PaymentSimulator from "./pages/Payment-Simulator/PaymentSimulator";
+import PaymentSimulator from "./pages/Payment-simulator/PaymentSimulator";
 import QRPayment from "./pages/payment-simulator/QRPayment";
 import ScamDetection from "./pages/payment-simulator/ScamDetection";
 import RequestScam from "./pages/payment-simulator/RequestScam";
@@ -67,8 +67,7 @@ function App() {
           element={<OTPChallenge />}
         />
 
-        {/* 
-        <Route path="/payment-simulator/send-money" element={<SendMoney />} />
+   
 
 
 
